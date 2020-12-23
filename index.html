@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>D3 practice</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <h1 class="project-heading">Information Visualization Project</h1>
+      <h2 class="project-name">All India Money Stock measures</h2>
+      <div class="line-chart"><svg id="svg"></svg></div>
+      <div class="select-div">
+        <label style="font-size: 25px"
+          >Choose year for pie chart. (Alternatively, you may click on the
+          labels on the x-axis.)</label
+        >
+        <select style="width: 200px; display: block; margin: 25px auto">
+          <option>Choose Year</option>
+          <option>2001</option>
+          <option>2002</option>
+          <option>2003</option>
+          <option>2004</option>
+          <option>2005</option>
+          <option>2006</option>
+          <option>2007</option>
+          <option>2008</option>
+          <option>2009</option>
+          <option>2010</option>
+          <option>2011</option>
+          <option>2012</option>
+          <option>2013</option>
+          <option>2014</option>
+          <option>2015</option>
+          <option>2016</option>
+          <option>2017</option>
+        </select>
+      </div>
+      <div class="pie-chart-div">
+        <label class="svg-label"
+          >Total Money (Sum of Public Currency and Deposit money of the
+          public)</label
+        >
+        <svg id="container" height="400px" width="1000px"></svg>
+        <label class="svg-label"
+          >Currency with the Public + Cash in Hand Banks (Sum of Notes in
+          Circulation, Circulation of Rupee Coins and Circulation of Small
+          Coins)</label
+        >
+        <svg id="pcontainer" height="400px" width="1000px"></svg>
+        <label class="svg-label"
+          >Deposit Money of the Public (Sum of Demand Deposit of Banks and Other
+          Deposits in the Reserve Bank</label
+        >
+        <svg id="dcontainer" height="400px" width="1000px"></svg>
+      </div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
