@@ -1,4 +1,4 @@
-Year,PublicCurrency,CirculationNotes,CirculationRupeeCoins,CirculationSmallCoins,CashHandBanks,DepositPublic,DemandDepositsBanks,DepositReserveBank,TotalMoney
+Year,PublicCurrency,CirculationNotes,CirculationRupeeCoins,CirculationSmallCoins,CashHandBanks,DepositPublic,DemandDepositBanks,DepositReserveBank,TotalMoney
 2001,2095.5,2128.5,40.5,13,86.5,1698.8,1662.7,36.1,3794.3
 2002,2407.9,2446.1,49.3,14.4,101.8,1820.3,1792,28.3,4228.2
 2003,2715.8,2754,56.1,14.6,108.9,2019.8,1987.6,32.2,4735.6

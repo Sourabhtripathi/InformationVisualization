@@ -163,7 +163,6 @@ d3.csv("./data.csv").then(function (myData) {
     if (mymodifiedData.length !== 0) {
       let myYearArray = mymodifiedData[+pieYear - 2001];
 
-      drawspace.selectAll("path").remove();
       for (let i = 0; i < 3; i++) {
         let myArray = [];
         if (i === 0) {
@@ -190,7 +189,7 @@ d3.csv("./data.csv").then(function (myData) {
           .range(
             i === 0
               ? d3.schemeCategory10
-              : i == 1
+              : i === 1
               ? d3.schemeDark2
               : d3.schemePastel1
           )
