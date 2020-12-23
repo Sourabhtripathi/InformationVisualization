@@ -1,3 +1,12 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.choose {
+  text-decoration: underline;
+}
+hr {
+  margin: 30px 20px;
+}
 .path1 {
   fill: none;
 }
@@ -31,7 +40,12 @@ rect {
   display: block;
   margin: 50px;
   font-size: 20px;
+  text-decoration: underline;
 }
 .pie-chart-div {
   display: none;
+  border: 1px solid;
+  margin: 50px;
+  border: 1px solid #bfbfbf;
+  box-shadow: 1px 1px 10px 5px #888888;
 }

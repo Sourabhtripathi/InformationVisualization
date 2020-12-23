@@ -80,18 +80,18 @@ d3.csv("./data.csv").then(function (myData) {
     .attr("y", 14)
     .text((d) => {
       if (d === "PublicCurrency") return "Currency with the public";
-      else if (d === "DepositPublic") return "Deposit Money of the Public";
+      else if (d === "DepositPublic") return "Deposit money of the Public";
       else return "Total Money";
     });
 
   let mypieArray = [
-    ["Currency with the public", "Deposit Money of the Public"],
+    ["Currency with the public", "Deposit money of the Public"],
     [
       "Notes in Circulation",
       "Circulation of Rupee Coins",
       "Circulation of Small Coins",
     ],
-    ["Demand Deposit of Banks", "Other Deposits in the Reserve Bank"],
+    ["Demand Deposit of Banks", "'Other' Deposit with Reserve Bank"],
   ];
 
   let selectElement = document.querySelector("select");
@@ -146,7 +146,7 @@ d3.csv("./data.csv").then(function (myData) {
                   value: d.CashHandBanks,
                 },
                 {
-                  category: "Deposit Money of the Public",
+                  category: "Deposit money of the Public",
                   value: d.DepositPublic,
                 },
                 {
@@ -154,7 +154,7 @@ d3.csv("./data.csv").then(function (myData) {
                   value: d.DemandDepositBanks,
                 },
                 {
-                  category: "Other Deposits in the Reserve Bank",
+                  category: "'Other' Deposit with Reserve Bank",
                   value: d.DepositReserveBank,
                 },
               ];
